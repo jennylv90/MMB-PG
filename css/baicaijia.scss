@@ -1,0 +1,183 @@
+@import "./_base.scss";
+
+// *********************
+// 侧边栏样式
+.aside-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .main-item {
+        height: 1.5rem;
+        padding: .2rem .05rem 0 .05rem;
+        border-bottom: 1px solid rgb(116, 104, 104);
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                padding: .05rem 0;
+                display: flex;
+                align-items: center;
+                img {
+                    width: .2rem;
+                }
+                span {
+                    padding-left: .1rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .other-item {
+        padding-top: .1rem;
+        flex: 1;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
+                padding: .05rem;
+                text-align: center;
+                // 字体图标
+                p {
+                    border: 1px solid #ccc;
+                    padding: .03rem;
+                    border-radius: .08rem;
+                }
+                // 文字
+                span {
+                    display: block;
+                    color: #fff
+                }
+            }
+        }
+        
+    }
+    .user-info {
+        height: .5rem;
+        display: flex;
+        > div {
+            border-top: 1px solid #ccc;
+            color: #fff;
+            width: 50%;
+            text-align: center;
+            line-height: 0.5rem;
+            span {
+                margin-left: .05rem;
+            }
+        }
+        div:nth-of-type(1) {
+            border-right: 1px solid #ccc;
+        }
+    }
+}
+
+// *********************
+// 主页面样式
+#container {
+
+    // 主页面容器样式配置
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // 头部样式
+    #header {
+        height: .45rem;
+        background-color: rgb(226, 198, 198);
+        > div {
+            display: flex;
+            .left,.right {
+                width: .5rem;
+                text-align: center;
+                padding: .05rem;
+                p {
+                    margin-bottom: 0;
+                    &.mui-icon {
+                        font-size: .24rem;
+                    }
+                }
+                span {
+                    display: block;
+                    font-size: .12rem;
+                }
+            }
+            .title {
+                flex: 1;
+                text-align: center;
+                line-height: .45rem;
+                font-size: .2rem;
+                font-weight: 700;
+                color: $main-color;
+            }
+        }
+    }
+    
+    // 主体样式
+    #main {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+
+        // 导航横线滚动条
+        .nav {
+            height: .38rem;
+            // background-color: red;
+            position: relative;
+            .mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+                padding: 0 .2rem;
+            }
+            .mui-segmented-control .mui-control-item {
+                line-height: .38rem;
+            }
+            .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+                color: $main-color;
+                border:none;
+            }
+            .mui-segmented-control {
+                font-size: .15rem;
+
+                .mui-segmented-control-inverted .mui-control-item {
+                    line-height: .38rem;
+                }
+                
+                &.mui-scroll-wrapper {
+                    height: .38rem;
+                    .mui-scroll {
+                        height: .38rem;
+                    }
+                }
+            
+            }
+            // 分类下拉菜单
+            #category {
+                background-color: #fff;
+                position: absolute;
+                right: 0;
+                bottom: .08rem;
+                z-index: 99;
+                span {
+                    &.mui-icon {
+                        color: $main-color;
+                        font-size: .24rem
+                    }
+                }
+            }
+        }
+
+        // 商品内容区
+        
+    }
+    
+
+
+
+
+
+}
+
+
+
+
+
+
