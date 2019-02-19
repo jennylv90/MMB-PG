@@ -1,0 +1,63 @@
+html {
+  font-size: 26.66667vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 移动端按住元素取消高亮背景色 */
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font: 0.14rem/100% '微软雅黑', '宋体', '黑体';
+  background-color: #fff;
+  color: black;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666666;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+input,
+button,
+select {
+  border: none;
+  outline: none;
+}
+i {
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix::after {
+  content: '';
+  display: none;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.border-top {
+  border-top: 1px solid #cccccc;
+}
+.border-right {
+  border-right: 1px solid #cccccc;
+}
+.border-bottom {
+  border-bottom: 1px solid #cccccc;
+}
+.border-left {
+  border-left: 1px solid #cccccc;
+}
